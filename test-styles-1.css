@@ -1,0 +1,124 @@
+
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+a:any-link {
+    color: black;
+    text-decoration: none;
+  }
+
+.wrapper {
+    min-height: 100%;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.navigation {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.site-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 1rem;
+}
+
+.page-title {
+    font-weight: 700;
+    padding-bottom: 0.35rem;
+}
+
+.footer {
+    height: 50px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #ebebeb;
+    border-style: solid;
+    border-color: black;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+
+    position: absolute; 
+    left: 0 ; 
+    right: 0; 
+    bottom: 0; 
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 0.75rem;
+}
+
+.title {
+    width: 50%;
+    align-self: end;
+    border-style: solid;
+    border-width: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    background-color: #ebebeb;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+}
+
+.description {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media all and (max-width: 600px) {
+    .container {
+            flex-wrap: wrap;
+    }
+
+    .article {
+        margin-bottom: 1rem;
+    }
+
+    .page-title {
+        display: none;
+    }
+
+    .links-menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
