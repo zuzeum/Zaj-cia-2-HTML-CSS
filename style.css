@@ -1,4 +1,38 @@
 
-.button {
+container {
+    background-color: var(--nav-color);
+    font-size: 1.2rem;
+    font-family: "Merriweather Sans", sans-serif;
+    height: 70px;
+}
+
+navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+navbar ul li {
+    list-style-type: none;
+  }
+  
+container .navbar ul li {
+    padding: 10px;
+    margin: 0 10px;
+}
+  
+navbar a {
+    color: var(--nav-text);
+    font-weight: bold;
+}
+  
+navbar a:hover {
+    color: var(--secondary-color);
+}
+
+button {
     display: block;
 }
